@@ -49,16 +49,20 @@
             font-weight: bold;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             transition: transform 0.2s ease, background-color 0.3s ease;
+            cursor: pointer;
         }
 
-        .button:hover {
+        .button:hover:not(.disabled) {
             background-color: #ffde59;
             transform: scale(1.05);
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
         }
 
-        .button:active {
-            transform: scale(0.95);
+        .button.disabled {
+            background-color: #ccc;
+            color: #777;
+            cursor: not-allowed;
+            box-shadow: none;
         }
     </style>
 </head>
@@ -66,58 +70,97 @@
 
     <h1>Deberes de Inglés</h1>
 
-    <div class="button-container">
-        <a href="https://app.off2class.com/student/homework/5102207" class="button" target="_blank">Deber 1</a>
-        <a href="https://app.off2class.com/student/homework/5102206" class="button" target="_blank">Deber 2</a>
-        <a href="https://app.off2class.com/student/homework/5102205" class="button" target="_blank">Deber 3</a>
-        <a href="https://app.off2class.com/student/homework/5102204" class="button" target="_blank">Deber 4</a>
-        <a href="https://app.off2class.com/student/homework/5102203" class="button" target="_blank">Deber 5</a>
-        <a href="https://app.off2class.com/student/homework/5102202" class="button" target="_blank">Deber 6</a>
-        <a href="https://app.off2class.com/student/homework/5102201" class="button" target="_blank">Deber 7</a>
-        <a href="https://app.off2class.com/student/homework/5102200" class="button" target="_blank">Deber 8</a>
-        <a href="https://app.off2class.com/student/homework/5102199" class="button" target="_blank">Deber 9</a>
-        <a href="https://app.off2class.com/student/homework/5102198" class="button" target="_blank">Deber 10</a>
-        <a href="https://app.off2class.com/student/homework/5102197" class="button" target="_blank">Deber 11</a>
-        <a href="https://app.off2class.com/student/homework/5102196" class="button" target="_blank">Deber 12</a>
-        <a href="https://app.off2class.com/student/homework/5102195" class="button" target="_blank">Deber 13</a>
-        <a href="https://app.off2class.com/student/homework/5102194" class="button" target="_blank">Deber 14</a>
-        <a href="https://app.off2class.com/student/homework/5102193" class="button" target="_blank">Deber 15</a>
-        <a href="https://app.off2class.com/student/homework/5102192" class="button" target="_blank">Deber 16</a>
-        <a href="https://app.off2class.com/student/homework/5102191" class="button" target="_blank">Deber 17</a>
-        <a href="https://app.off2class.com/student/homework/5102190" class="button" target="_blank">Deber 18</a>
-        <a href="https://app.off2class.com/student/homework/5102189" class="button" target="_blank">Deber 19</a>
-        <a href="https://app.off2class.com/student/homework/5102188" class="button" target="_blank">Deber 20</a>
-        <a href="https://app.off2class.com/student/homework/5102187" class="button" target="_blank">Deber 21</a>
-        <a href="https://app.off2class.com/student/homework/5102186" class="button" target="_blank">Deber 22</a>
-        <a href="https://app.off2class.com/student/homework/5102185" class="button" target="_blank">Deber 23</a>
-        <a href="https://app.off2class.com/student/homework/5102184" class="button" target="_blank">Deber 24</a>
-        <a href="https://app.off2class.com/student/homework/5102183" class="button" target="_blank">Deber 25</a>
-        <a href="https://app.off2class.com/student/homework/5102182" class="button" target="_blank">Deber 26</a>
-        <a href="https://app.off2class.com/student/homework/5102181" class="button" target="_blank">Deber 27</a>
-        <a href="https://app.off2class.com/student/homework/5102180" class="button" target="_blank">Deber 28</a>
-        <a href="https://app.off2class.com/student/homework/5102179" class="button" target="_blank">Deber 29</a>
-        <a href="https://app.off2class.com/student/homework/5102178" class="button" target="_blank">Deber 30</a>
-        <a href="https://app.off2class.com/student/homework/5102177" class="button" target="_blank">Deber 31</a>
-        <a href="https://app.off2class.com/student/homework/5102176" class="button" target="_blank">Deber 32</a>
-        <a href="https://app.off2class.com/student/homework/5102175" class="button" target="_blank">Deber 33</a>
-        <a href="https://app.off2class.com/student/homework/5102174" class="button" target="_blank">Deber 34</a>
-        <a href="https://app.off2class.com/student/homework/5102173" class="button" target="_blank">Deber 35</a>
-        <a href="https://app.off2class.com/student/homework/5102172" class="button" target="_blank">Deber 36</a>
-        <a href="https://app.off2class.com/student/homework/5102171" class="button" target="_blank">Deber 37</a>
-        <a href="https://app.off2class.com/student/homework/5102170" class="button" target="_blank">Deber 38</a>
-        <a href="https://app.off2class.com/student/homework/5102169" class="button" target="_blank">Deber 39</a>
-        <a href="https://app.off2class.com/student/homework/5102168" class="button" target="_blank">Deber 40</a>
-        <a href="https://app.off2class.com/student/homework/5102167" class="button" target="_blank">Deber 41</a>
-        <a href="https://app.off2class.com/student/homework/5102166" class="button" target="_blank">Deber 42</a>
-        <a href="https://app.off2class.com/student/homework/5102165" class="button" target="_blank">Deber 43</a>
-        <a href="https://app.off2class.com/student/homework/5102164" class="button" target="_blank">Deber 44</a>
-        <a href="https://app.off2class.com/student/homework/5102163" class="button" target="_blank">Deber 45</a>
-        <a href="https://app.off2class.com/student/homework/5102162" class="button" target="_blank">Deber 46</a>
-        <a href="https://app.off2class.com/student/homework/5102161" class="button" target="_blank">Deber 47</a>
-        <a href="https://app.off2class.com/student/homework/5102160" class="button" target="_blank">Deber 48</a>
-        <a href="https://app.off2class.com/student/homework/5102159" class="button" target="_blank">Deber 49</a>
-        <a href="https://app.off2class.com/student/homework/5102158" class="button" target="_blank">Deber 50</a>
-    </div>
+<div class="button-container">
+    <a href="https://app.off2class.com/student/homework/5102207" class="button" target="_blank" data-id="1">Deber 1</a>
+    <a href="https://app.off2class.com/student/homework/5102206" class="button" target="_blank" data-id="2">Deber 2</a>
+    <a href="https://app.off2class.com/student/homework/5102205" class="button" target="_blank" data-id="3">Deber 3</a>
+    <a href="https://app.off2class.com/student/homework/5102204" class="button" target="_blank" data-id="4">Deber 4</a>
+    <a href="https://app.off2class.com/student/homework/5102203" class="button" target="_blank" data-id="5">Deber 5</a>
+    <a href="https://app.off2class.com/student/homework/5102202" class="button" target="_blank" data-id="6">Deber 6</a>
+    <a href="https://app.off2class.com/student/homework/5102201" class="button" target="_blank" data-id="7">Deber 7</a>
+    <a href="https://app.off2class.com/student/homework/5102200" class="button" target="_blank" data-id="8">Deber 8</a>
+    <a href="https://app.off2class.com/student/homework/5102199" class="button" target="_blank" data-id="9">Deber 9</a>
+    <a href="https://app.off2class.com/student/homework/5102198" class="button" target="_blank" data-id="10">Deber 10</a>
+    <a href="https://app.off2class.com/student/homework/5102197" class="button" target="_blank" data-id="11">Deber 11</a>
+    <a href="https://app.off2class.com/student/homework/5102196" class="button" target="_blank" data-id="12">Deber 12</a>
+    <a href="https://app.off2class.com/student/homework/5102195" class="button" target="_blank" data-id="13">Deber 13</a>
+    <a href="https://app.off2class.com/student/homework/5102194" class="button" target="_blank" data-id="14">Deber 14</a>
+    <a href="https://app.off2class.com/student/homework/5102193" class="button" target="_blank" data-id="15">Deber 15</a>
+    <a href="https://app.off2class.com/student/homework/5102192" class="button" target="_blank" data-id="16">Deber 16</a>
+    <a href="https://app.off2class.com/student/homework/5102191" class="button" target="_blank" data-id="17">Deber 17</a>
+    <a href="https://app.off2class.com/student/homework/5102190" class="button" target="_blank" data-id="18">Deber 18</a>
+    <a href="https://app.off2class.com/student/homework/5102189" class="button" target="_blank" data-id="19">Deber 19</a>
+    <a href="https://app.off2class.com/student/homework/5102188" class="button" target="_blank" data-id="20">Deber 20</a>
+    <a href="https://app.off2class.com/student/homework/5102187" class="button" target="_blank" data-id="21">Deber 21</a>
+    <a href="https://app.off2class.com/student/homework/5102186" class="button" target="_blank" data-id="22">Deber 22</a>
+    <a href="https://app.off2class.com/student/homework/5102185" class="button" target="_blank" data-id="23">Deber 23</a>
+    <a href="https://app.off2class.com/student/homework/5102184" class="button" target="_blank" data-id="24">Deber 24</a>
+    <a href="https://app.off2class.com/student/homework/5102183" class="button" target="_blank" data-id="25">Deber 25</a>
+    <a href="https://app.off2class.com/student/homework/5102182" class="button" target="_blank" data-id="26">Deber 26</a>
+    <a href="https://app.off2class.com/student/homework/5102181" class="button" target="_blank" data-id="27">Deber 27</a>
+    <a href="https://app.off2class.com/student/homework/5102180" class="button" target="_blank" data-id="28">Deber 28</a>
+    <a href="https://app.off2class.com/student/homework/5102179" class="button" target="_blank" data-id="29">Deber 29</a>
+    <a href="https://app.off2class.com/student/homework/5102178" class="button" target="_blank" data-id="30">Deber 30</a>
+    <a href="https://app.off2class.com/student/homework/5102177" class="button" target="_blank" data-id="31">Deber 31</a>
+    <a href="https://app.off2class.com/student/homework/5102176" class="button" target="_blank" data-id="32">Deber 32</a>
+    <a href="https://app.off2class.com/student/homework/5102175" class="button" target="_blank" data-id="33">Deber 33</a>
+    <a href="https://app.off2class.com/student/homework/5102174" class="button" target="_blank" data-id="34">Deber 34</a>
+    <a href="https://app.off2class.com/student/homework/5102173" class="button" target="_blank" data-id="35">Deber 35</a>
+    <a href="https://app.off2class.com/student/homework/5102172" class="button" target="_blank" data-id="36">Deber 36</a>
+    <a href="https://app.off2class.com/student/homework/5102171" class="button" target="_blank" data-id="37">Deber 37</a>
+    <a href="https://app.off2class.com/student/homework/5102170" class="button" target="_blank" data-id="38">Deber 38</a>
+    <a href="https://app.off2class.com/student/homework/5102169" class="button" target="_blank" data-id="39">Deber 39</a>
+    <a href="https://app.off2class.com/student/homework/5102168" class="button" target="_blank" data-id="40">Deber 40</a>
+    <a href="https://app.off2class.com/student/homework/5102167" class="button" target="_blank" data-id="41">Deber 41</a>
+    <a href="https://app.off2class.com/student/homework/5102166" class="button" target="_blank" data-id="42">Deber 42</a>
+    <a href="https://app.off2class.com/student/homework/5102165" class="button" target="_blank" data-id="43">Deber 43</a>
+    <a href="https://app.off2class.com/student/homework/5102164" class="button" target="_blank" data-id="44">Deber 44</a>
+    <a href="https://app.off2class.com/student/homework/5102163" class="button" target="_blank" data-id="45">Deber 45</a>
+    <a href="https://app.off2class.com/student/homework/5102162" class="button" target="_blank" data-id="46">Deber 46</a>
+    <a href="https://app.off2class.com/student/homework/5102161" class="button" target="_blank" data-id="47">Deber 47</a>
+    <a href="https://app.off2class.com/student/homework/5102160" class="button" target="_blank" data-id="48">Deber 48</a>
+    <a href="https://app.off2class.com/student/homework/5102159" class="button" target="_blank" data-id="49">Deber 49</a>
+    <a href="https://app.off2class.com/student/homework/5102158" class="button" target="_blank" data-id="50">Deber 50</a>
+</div>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const buttons = document.querySelectorAll('.button');
+
+            // Cargar el estado guardado de cada botón
+            buttons.forEach(button => {
+                const buttonId = button.getAttribute('data-id');
+                const isDisabled = localStorage.getItem(`button-${buttonId}`);
+
+                if (isDisabled === 'true') {
+                    button.classList.add('disabled');
+                    button.setAttribute('aria-disabled', 'true');
+                }
+
+                // Evento de click para deshabilitar el botón y prevenir navegación si está deshabilitado
+                button.addEventListener('click', (event) => {
+                    if (button.classList.contains('disabled')) {
+                        event.preventDefault(); // Evita que se abra el enlace
+                    } else {
+                        button.classList.add('disabled');
+                        button.setAttribute('aria-disabled', 'true');
+                        localStorage.setItem(`button-${buttonId}`, 'true');
+                    }
+                });
+
+                // Evento de doble click para reactivar el botón
+                button.addEventListener('dblclick', (event) => {
+                    event.preventDefault(); // Evita que se abra el enlace en doble clic
+                    if (button.classList.contains('disabled')) {
+                        button.classList.remove('disabled');
+                        button.removeAttribute('aria-disabled');
+                        localStorage.removeItem(`button-${buttonId}`);
+                    }
+                });
+            });
+        });
+    </script>
 
 </body>
 </html>
